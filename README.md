@@ -40,6 +40,6 @@ This readme file will instruct you to run the codes in this repository and custo
 5.modified_EMD_visualization_PTB.py--------- Modified EMD comparison with raw signal of PTB database<br />
 
 ## License
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
