@@ -50,8 +50,8 @@ python EMD_data_train_any_combinations.py -options
 ```
 
 options<br />
-- -p = Path to the main database  \| deafault = config.data_path
-- -c = Path to the CSV Folder of EMD Data \| = config.IMF_csv_path
+- -p = Path to the main database   \|  deafault = config.data_path
+- -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -res = Resume Training \| default='False'
 - -inep = Initial Epoch after Resuming Training \| default=config.initial_epoch
 - -reim = Resumed IMF number after resuming \| default=1
