@@ -1,6 +1,15 @@
 # Cardiovascular_Disease_Classification_Employing_EMD
 Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EMD) of Modified ECG
 
+## License
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Author and Principal contributor
+- Nahian Ibn Hasan
+- Email: nahianhasan1994@gmail.com
+- LinkedIn: www.linkedin.com/in/nahian-ibn-hasan-buet
+- Dhaka, Bangladesh
+
 ## Getting Started
 This readme file will instruct you to run the codes in this repository and customize it to your own database.
 
@@ -38,9 +47,6 @@ This readme file will instruct you to run the codes in this repository and custo
 3.learning_rate_scheduler.py---------------- learning rate scheduler visualize used in training<br />
 4.modified_EMD_visualization_Petersburg.py-- Modified EMD comparison with raw signal of Petersburg database<br />
 5.modified_EMD_visualization_PTB.py--------- Modified EMD comparison with raw signal of PTB database<br />
-
-## License
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
 ## Code Run
