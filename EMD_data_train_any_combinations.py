@@ -252,7 +252,7 @@ def Main():
 	parser = argparse.ArgumentParser(description='ECG data training using EMD Data with separate threading',
 									usage='Classifying EMD Data',
 									epilog='Give proper arguments')
-	parser.add_argument('-p',"--data_path",metavar='', help="Path to temain database",default=C.data_path)
+	parser.add_argument('-p',"--data_path",metavar='', help="Path to the main database",default=C.data_path)
 	parser.add_argument('-c',"--csv_path",metavar='',help="Path to the CSV Folder of EMD Data",default=C.IMF_csv_path)
 	parser.add_argument('-res',"--resume_train",metavar='',help="Resume Training",default='False')
 	parser.add_argument('-inep',"--ini_epoch",metavar='',help="Initial Epoch after Resuming Training",default=C.initial_epoch)
