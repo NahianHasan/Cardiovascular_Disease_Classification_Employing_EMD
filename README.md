@@ -2,9 +2,9 @@
 Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EMD) of Modified ECG
 
 Folder Files:
->>config.py--------------------------------- contains parameters.
->>Folder_creation.py------------------------ creates separate folders to store the training outputs.
->>EMD_Models.py----------------------------- contains different network architectures to train the model.
+>>config.py--------------------------------- contains parameters
+>>Folder_creation.py------------------------ creates separate folders to store the training outputs
+>>EMD_Models.py----------------------------- contains different network architectures to train the model
 >>EMD_Models_Parallel.py-------------------- contains parallel architectures for training. [for details refer to the original elsevier article.]
 >>EMD_data_prepare.py------ code for generating IMF signals from EMD analysis of signals.
 >>EMD_data_train_all_combinations_pc.py----- train on specified IMF combination in a CPU
