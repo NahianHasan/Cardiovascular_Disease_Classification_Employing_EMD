@@ -1,6 +1,9 @@
 # Cardiovascular_Disease_Classification_Employing_EMD
 Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EMD) of Modified ECG
 
+## Getting Started
+This readme file will instruct you to run the codes in this repository and customize it to your own database.
+
 ###Folder Files:
 >>config.py--------------------------------- contains parameters.<br />
 >>Folder_creation.py------------------------ creates separate folders to store the training outputs.<br />
@@ -25,11 +28,11 @@ Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EM
 >>Confusion_Matrix_Parallel.py-------------- Confusion matrix for parallel architecture<br />
 >>all_combinations_plot.py------------------ Plot the accuracy of all combinations used for modified ECG<br />
 
-#FILES INSIDE 'Noise Analysis' FOLDER
+###FILES INSIDE 'Noise Analysis' FOLDER
 >>modified_ECG_analysis_MIT_BIH.py---------- Pearson correlation coefficient calculation for each of the classes considered from MIT-BIH Arrhythmia database<br />
 >>modified_ECG_analysis_PTB_Petes.py-------- Pearson correlation coefficient calculation for each of the classes considered from PTB and ST.-Petersberg database<br />
 
-#FILES INSIDE 'Visualization' FOLDER
+###FILES INSIDE 'Visualization' FOLDER
 >>EMD_visualization_petersburg.py----------- IMFs visualization of Petersburg Database<br />
 >>EMD_visualization_PTB.py------------------ IMFs visualization of PTB databse<br />
 >>learning_rate_scheduler.py---------------- learning rate scheduler visualize used in training<br />
