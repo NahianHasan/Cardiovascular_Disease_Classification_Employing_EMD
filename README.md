@@ -43,3 +43,10 @@ This readme file will instruct you to run the codes in this repository and custo
 This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
+## Code Run
+### EMD_data_train_any_combinations.py
+```
+python EMD_data_train_any_combinations.py -options
+```
+
+
