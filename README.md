@@ -48,5 +48,8 @@ This repository is licensed under the MIT License - see the [LICENSE](LICENSE) f
 ```
 python EMD_data_train_any_combinations.py -options
 ```
+options<br />
+- p
+
 
 
