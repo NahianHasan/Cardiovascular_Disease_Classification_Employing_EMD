@@ -1,7 +1,7 @@
 # Cardiovascular_Disease_Classification_Employing_EMD
 Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EMD) of Modified ECG
 
-Folder Files:\\
+Folder Files:\n
 config.py--------------------------------- contains parameters
 Folder_creation.py------------------------ creates separate folders to store the training outputs
 EMD_Models.py----------------------------- contains different network architectures to train the model
