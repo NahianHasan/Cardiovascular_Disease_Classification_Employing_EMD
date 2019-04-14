@@ -4,7 +4,7 @@ Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EM
 ## Getting Started
 This readme file will instruct you to run the codes in this repository and customize it to your own database.
 
-###Folder Files
+##Folder Files
 1.config.py--------------------------------- contains parameters.<br />
 2.Folder_creation.py------------------------ creates separate folders to store the training outputs.<br />
 3.EMD_Models.py----------------------------- contains different network architectures to train the model.<br />
@@ -26,13 +26,13 @@ This readme file will instruct you to run the codes in this repository and custo
 19.confusion_mat_plot.py--------------------- Confusion matrix plot[used by Confusion_Matrix.py]<br />
 20.Confusion_Matrix.py----------------------- Confusion matrix plot<br />
 21.Confusion_Matrix_Parallel.py-------------- Confusion matrix for parallel architecture<br />
-22.all_combinations_plot.py------------------ Plot the accuracy of all combinations used for modified ECG<br />
+22.all_combinations_plot.py------------------ Plot the accuracy of all combinations used for modified ECG
 
-###FILES INSIDE 'Noise Analysis' FOLDER
+##FILES INSIDE 'Noise Analysis' FOLDER
 1.modified_ECG_analysis_MIT_BIH.py---------- Pearson correlation coefficient calculation for each of the classes considered from MIT-BIH Arrhythmia database<br />
 2.modified_ECG_analysis_PTB_Petes.py-------- Pearson correlation coefficient calculation for each of the classes considered from PTB and ST.-Petersberg database<br />
 
-###FILES INSIDE 'Visualization' FOLDER
+##FILES INSIDE 'Visualization' FOLDER
 1.EMD_visualization_petersburg.py----------- IMFs visualization of Petersburg Database<br />
 2.EMD_visualization_PTB.py------------------ IMFs visualization of PTB databse<br />
 3.learning_rate_scheduler.py---------------- learning rate scheduler visualize used in training<br />
