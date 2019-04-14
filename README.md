@@ -4,6 +4,20 @@ Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EM
 ## License
 This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
+## Purpose and Features
+- Cardiovascular disease classification based on Modified ECG employing Empirical Mode Decomposition.
+- Different modes of training such as maximum voting strategy, parallel mode and etc.
+- Compare modified ECG and raw ECG signal
+- Visualization of Empirical Mode Decomposition
+- Validate on multiple database such as MIT-BIH Arrhythmia database, PTB diagonstic database, St.-Petersburg Arrhythmia database etc. from PhysioNet.
+- Different combinations of IMF testing
+- Customizable to any custom built database
+- Analyze the test result through confusion matrix
+- custom learning rate scheduler implementation
+- custom network implementation
+- 1-D version of many standard DNN architectures such as Alexnet, ZFNet, Resnet150, GoogleNet and etc.
+- provision for individual network structure for each of IMF signals
+
 ## Author and Principal contributor
 - Nahian Ibn Hasan
 - Email: nahianhasan1994@gmail.com
@@ -50,7 +64,7 @@ This readme file will instruct you to run the codes in this repository and custo
 
 
 ## Code Run
-### EMD_data_train_any_combinations.py
+#### EMD_data_train_any_combinations.py
 ```
 python EMD_data_train_any_combinations.py -options
 ```
