@@ -20,6 +20,20 @@ This repository is licensed under the MIT License - see the [LICENSE](LICENSE) f
 - graphviz
 - pyhht
 
+## Citation
+If you are benefited by this repository or the research, please cite the work as follows.
+
+- @article{HASAN2019128,
+title = "Deep Learning Approach to Cardiovascular Disease Classification Employing Modified ECG Signal from Empirical Mode Decomposition",
+journal = "Biomedical Signal Processing and Control",
+volume = "52",
+pages = "128 - 140",
+year = "2019",
+issn = "1746-8094",
+doi = "https://doi.org/10.1016/j.bspc.2019.04.005",
+url = "http://www.sciencedirect.com/science/article/pii/S1746809419301028",
+author = "Nahian Ibn Hasan and Arnab Bhattacharjee",
+keywords = "EMD, 1-D CNN, Modified ECG, Heart disease classification, Deep learning, Denoising ECG, IMF, Cardiovascular"}
 
 ## Purpose and Features
 - Cardiovascular disease classification based on Modified ECG employing Empirical Mode Decomposition.
