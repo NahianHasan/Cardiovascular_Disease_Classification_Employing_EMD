@@ -316,3 +316,5 @@ def Main():
 	spl_perc = float(args.split_perc)
 
 	EMD_data_preparation(filepath,patient_data,csv_folder,problem_data_file,samplenumber,number_of_IMFs,spl_perc)
+
+Main()

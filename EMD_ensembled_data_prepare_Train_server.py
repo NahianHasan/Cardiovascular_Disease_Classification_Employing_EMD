@@ -72,7 +72,7 @@ def Main():
 	parser.add_argument('-s',"--sample_number",metavar='',help="Number of samples to be taken by each record",type=int,default=C.samplenumber)
 	parser.add_argument('-imf',"--number_of_IMFs",metavar='',help="Number of IMFs to be extracted",default=C.number_of_IMFs,type=int,choices=[2,3,4,5,6])
 	parser.add_argument('-spl',"--split_perc",metavar='',help="Splitting percentage of train and test(upper limit)",type=float,default=C.split_perc)
-	parser.add_argument('-trl',"--train_list",metavar='',help="A csv file containing the list of train files")
+	parser.add_argument('-trl',"--tr_list",metavar='',help="A csv file containing the list of train files")
 
 	args = parser.parse_args()
 
@@ -86,5 +86,5 @@ def Main():
 
 
 	EMD_data_preparation(csv_path,samplenumber,train_list)
-
+Main()
 
