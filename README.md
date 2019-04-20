@@ -119,4 +119,21 @@ options<br />
 - -spl = Splitting percentage of train and test(upper limit) \| type=float \| default=config.split_perc 
 - -fold = Save training and testing results in folder
 
+#### EMD_data_train_any_combinations.py
+```
+python EMD_data_training_server.py -options
+```
+options<br />
+\* means mendatory argument
+- -p = Path to the main database   \|  deafault = config.data_path
+- -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
+- -res = Resume Training \| default='False'
+- -inep = Initial Epoch after Resuming Training \| default=config.initial_epoch
+- -reim = Resumed IMF number after resuming \| default=1
+- -rc = Path to the Patient file RECORD.txt \| default=config.patient_data_path
+- -pd = Path to the text file where problematic data to be stored \| default=config.preoblem_data_path
+- -s = Number of samples to be taken by each record",type=int \| default=config.samplenumber
+- -imf = Number of IMFs to be extracted \| default=config.number_of_IMFs \| choices=[2,3,4,5,6]
+- -spl = Splitting percentage of train and test(upper limit) \| type=float \| default=config.split_perc 
+- -fold* = Save training and testing results in folder
 

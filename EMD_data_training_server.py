@@ -306,7 +306,7 @@ def Main():
 	
 
 	print '\n\nOriginal Data training started\n\n'
-	separate_threads(folder,[1,2,3],file_path,patient_data,problem_data,csv_folder,samplenumber,resume,initial_epoch)
+	separate_threads(folder,C.IMF_array,file_path,patient_data,problem_data,csv_folder,samplenumber,resume,initial_epoch)
 
 	#Plotting the history of training
 	print 'Finished Training all the IMF segments'
