@@ -185,8 +185,6 @@ def separate_threads(folder,filepath,patient_data,problem_data,csv_folder,sample
 	#Callback that streams epoch results to a csv file.
 	csv_logger = CSVLogger(folder+'/Training_CSV_log/training_CSV.log')
 	#keras FB ip
-	#FB = fb.sendmessage(savelog=True,fexten='TEST',username='nahianhasanbuet@gmail.com',password='Ratul1994')
-	#Tensorboard visualization
 	TENS_FILE = folder+'/Tensorboard_Visualization/'+'/{}'
 	tensor_board = TensorBoard(log_dir = TENS_FILE.format(time()),histogram_freq=0,write_graph=True,write_images=False)
 	#open a terminal and write 'tensorboard --logdir=logdir/' and go to the browser
