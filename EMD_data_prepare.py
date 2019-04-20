@@ -11,6 +11,9 @@ import wfdb
 import os
 import sys
 import glob
+import GPUtil
+import argparse
+import tensorflow as tf
 import time
 
 def EMD_data_preparation(filepath,patient_data,csv_folder,problem_data_file,samplenumber,number_of_IMFs,split_perc):
@@ -288,12 +291,37 @@ def EMD_data_preparation(filepath,patient_data,csv_folder,problem_data_file,samp
 		IMF6_test.close()
 	unIMFs.close()
 
+def Main():
 
-filepath = './PTB/'
-patient_data = 'RECORDS.txt'
-csv_folder = './csv_folder/'
-problem_data_file = './Problem_Data/problems.csv'
-samplenumber = 1000
-number_of_IMFs = 6
-split_perc = 0.7
-EMD_data_preparation(filepath,patient_data,csv_folder,problem_data_file,samplenumber,number_of_IMFs,split_perc)
+	deviceIDs=[]
+	while not deviceIDs:
+		deviceIDs = GPUtil.getAvailable(order='first',limit=1,maxMemory=0.80,maxLoad=0.99)
+		print 'searching for GPU to be available. Please wait.....'
+	print 'GPU Found...Starting Training\n'
+	# Assume that you have 12GB of GPU memory and want to allocate ~4GB:
+	gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.90)
+	sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+
+	parser = argparse.ArgumentParser(description='ECG data training using EMD Data with separate threading',
+									usage='Classifying EMD Data',
+									epilog='Give proper arguments')
+	parser.add_argument('-p',"--data_path",metavar='', help="Path to the main database",default=C.data_path)
+	parser.add_argument('-c',"--csv_path",metavar='',help="Path to the CSV Folder of EMD Data",default=C.IMF_csv_path)
+ Training",default=C.initial_epoch)
+	parser.add_argument('-rc',"--patient_data_path",metavar='',help="Path to the Patient file RECORD.txt",default=C.patient_data_path)
+	parser.add_argument('-pd',"--problem_data_path",metavar='',help="Path to the text file where problematic data to be stored",default=C.preoblem_data_path)
+	parser.add_argument('-s',"--sample_number",metavar='',help="Number of samples to be taken by each record",type=int,default=C.samplenumber)
+	parser.add_argument('-imf',"--number_of_IMFs",metavar='',help="Number of IMFs to be extracted",default=C.number_of_IMFs,type=int,choices=[2,3,4,5,6])
+	parser.add_argument('-spl',"--split_perc",metavar='',help="Splitting percentage of train and test(upper limit)",type=float,default=C.split_perc)
+
+	args = parser.parse_args()
+
+	file_path=args.data_path
+	csv_folder=args.csv_path
+	patient_data=args.patient_data_path
+	problem_data_file=args.problem_data_path
+	samplenumber=int(args.sample_number)
+	number_of_IMFs=int(args.number_of_IMFs)
+	spl_perc = float(args.split_perc)
+
+	EMD_data_preparation(filepath,patient_data,csv_folder,problem_data_file,samplenumber,number_of_IMFs,spl_perc)
