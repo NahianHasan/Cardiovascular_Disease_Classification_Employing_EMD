@@ -48,10 +48,17 @@ url = "http://www.sciencedirect.com/science/article/pii/S1746809419301028"}
 - 1-D version of many standard DNN architectures such as Alexnet, ZFNet, Resnet150, GoogleNet and etc.
 - provision for individual network structure for each of IMF signals
 
-## Author and Principal contributor
+## Corresponding Author and Principal Contributor
 - Nahian Ibn Hasan
 - Email: nahianhasan1994@gmail.com
 - LinkedIn: www.linkedin.com/in/nahian-ibn-hasan-buet
+- Bangladesh University of Engineering and Technology (BUET)
+- Dhaka, Bangladesh
+
+## Co-Author of the article
+- Arnab Bhattacharjee
+- Email:pritamarnab@gmail.com
+- Bangladesh University of Engineering and Technology (BUET)
 - Dhaka, Bangladesh
 
 ## Getting Started
