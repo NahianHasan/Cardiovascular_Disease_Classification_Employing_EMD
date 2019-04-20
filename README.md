@@ -235,3 +235,8 @@ options<br />
 - -imf = Number of IMFs to be extracted \| default=config.number_of_IMFs \| choices=[2,3,4,5,6]
 - -tel* = test file list as a csv file
 
+
+<br />
+```
+Stay tuned for further tutorials
+```
