@@ -4,6 +4,23 @@ Cardiovascular Disease Classification Employing Empirical Mode Decomposition (EM
 ## License
 This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
+## Dependencies
+- tensorflow
+- teensorflow-gpu
+- theano
+- keras
+- scikit-learn
+- numpy
+- matplotlib
+- scipy
+- wfdb package of PhysioNet
+- GPUtil
+- pickle
+- pydot
+- graphviz
+- pyhht
+
+
 ## Purpose and Features
 - Cardiovascular disease classification based on Modified ECG employing Empirical Mode Decomposition.
 - Different modes of training such as maximum voting strategy, parallel mode and etc.
