@@ -293,15 +293,6 @@ def EMD_data_preparation(filepath,patient_data,csv_folder,problem_data_file,samp
 
 def Main():
 
-	deviceIDs=[]
-	while not deviceIDs:
-		deviceIDs = GPUtil.getAvailable(order='first',limit=1,maxMemory=0.80,maxLoad=0.99)
-		print 'searching for GPU to be available. Please wait.....'
-	print 'GPU Found...Starting Training\n'
-	# Assume that you have 12GB of GPU memory and want to allocate ~4GB:
-	gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.90)
-	sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
-
 	parser = argparse.ArgumentParser(description='ECG data training using EMD Data with separate threading',
 									usage='Classifying EMD Data',
 									epilog='Give proper arguments')

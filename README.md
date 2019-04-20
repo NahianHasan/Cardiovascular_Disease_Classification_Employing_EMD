@@ -207,3 +207,17 @@ options<br />
 - -imf = Number of IMFs to be extracted \| default=config.number_of_IMFs \| choices=[2,3,4,5,6]
 - -spl = Splitting percentage of train and test(upper limit) \| type=float \| default=config.split_perc 
 
+#### 7.EMD_ensembled_data_prepare_Train_server.py
+```
+python EMD_ensembled_data_prepare_Train_server.py -options
+```
+options<br />
+\* means mendatory argument
+- -p = Path to the main database   \|  deafault = config.data_path
+- -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
+- -rc = Path to the Patient file RECORD.txt \| default=config.patient_data_path
+- -pd = Path to the text file where problematic data to be stored \| default=config.preoblem_data_path
+- -s = Number of samples to be taken by each record",type=int \| default=config.samplenumber
+- -imf = Number of IMFs to be extracted \| default=config.number_of_IMFs \| choices=[2,3,4,5,6]
+- -trl* = training file list as a csv file
+
