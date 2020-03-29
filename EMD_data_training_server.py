@@ -193,7 +193,7 @@ def separate_threads(folder,IMF_number,filepath,patient_data,problem_data,csv_fo
 	#Callback that streams epoch results to a csv file.
 	csv_logger = CSVLogger(folder+'/Training_CSV_log/training_IMF_'+str(IMF_number)+'.log')
 	#keras FB ip
-	#FB = fb.sendmessage(savelog=True,fexten='TEST',username='nahianhasanbuet@gmail.com',password='Ratul1994')
+	#FB = fb.sendmessage(savelog=True,fexten='TEST',username='',password='')
 	#Tensorboard visualization
 	TENS_FILE = folder+'/Tensorboard_Visualization/IMF_'+str(IMF_number)+'/{}'
 	tensor_board = TensorBoard(log_dir = TENS_FILE.format(time()),histogram_freq=0,write_graph=True,write_images=False)
