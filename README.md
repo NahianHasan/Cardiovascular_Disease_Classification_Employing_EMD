@@ -107,7 +107,7 @@ python EMD_data_train_any_combinations.py -options
 ```
 
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -res = Resume Training \| default='False'
@@ -126,7 +126,7 @@ python EMD_data_train_all_combinations_pc.py -options
 ```
 
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -res = Resume Training \| default='False'
@@ -144,7 +144,7 @@ options<br />
 python EMD_data_training_server.py -options
 ```
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -res = Resume Training \| default='False'
@@ -162,7 +162,7 @@ options<br />
 python EMD_data_training_pc.py -options
 ```
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -res = Resume Training \| default='False'
@@ -180,7 +180,7 @@ options<br />
 python EMD_data_training_server_ensembled.py -options
 ```
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -res = Resume Training \| default='False'
@@ -198,7 +198,7 @@ options<br />
 python EMD_data_prepare.py -options
 ```
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -rc = Path to the Patient file RECORD.txt \| default=config.patient_data_path
@@ -212,7 +212,7 @@ options<br />
 python EMD_ensembled_data_prepare_Train_server.py -options
 ```
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -rc = Path to the Patient file RECORD.txt \| default=config.patient_data_path
@@ -226,7 +226,7 @@ options<br />
 python EMD_ensembled_data_prepare_Test_server.py -options
 ```
 options<br />
-\* means mendatory argument
+\* means mandatory argument
 - -p = Path to the main database   \|  deafault = config.data_path
 - -c = Path to the CSV Folder of EMD Data  \|  default = config.IMF_csv_path
 - -rc = Path to the Patient file RECORD.txt \| default=config.patient_data_path
